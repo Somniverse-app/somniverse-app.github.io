@@ -1,0 +1,25 @@
+# Site settings
+title: "Somniverse"
+description: "Site officiel de l'application Somniverse"
+url: "https://somniverse-app.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Include files
+include:
+  - _pages
