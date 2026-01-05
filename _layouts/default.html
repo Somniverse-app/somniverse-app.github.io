@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Somniverse - L'application qui transforme vos nuits"
+      content="Somniverse - Partage tes rêves avec tes amis"
     />
-    <title>
-      {{ page.title | default: "Somniverse - Application de Sommeil" }}
-    </title>
+    <title>{{ page.title | default: "Somniverse - Partage tes rêves" }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <link
       rel="icon"
@@ -30,9 +28,15 @@
             <span class="logo-text">Somniverse</span>
           </div>
           <ul class="nav-links">
-            <li><a href="#features">Fonctionnalités</a></li>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#privacy">Confidentialité</a></li>
+            <li>
+              <a href="{{ '/' | relative_url }}#features">Fonctionnalités</a>
+            </li>
+            <li><a href="{{ '/' | relative_url }}#download">Télécharger</a></li>
+            <li>
+              <a href="{{ '/policy.html' | relative_url }}" target="_blank"
+                >Confidentialité</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -44,37 +48,17 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <div class="footer-logo">
-              <img
-                src="{{ '/assets/images/avatar.png' | relative_url }}"
-                alt="Somniverse Logo"
-                class="footer-logo-image"
-              />
-              <h3>Somniverse</h3>
-            </div>
-            <p>
-              L'application qui transforme vos nuits en expériences
-              extraordinaires.
-            </p>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook">📘</a>
-              <a href="#" aria-label="Twitter">🐦</a>
-              <a href="#" aria-label="Instagram">📷</a>
-            </div>
-          </div>
-
-          <div class="footer-section">
             <h3>Liens rapides</h3>
-            <a href="#features">Fonctionnalités</a>
-            <a href="#about">À propos</a>
-            <a href="#privacy">Confidentialité</a>
+            <a href="{{ '/' | relative_url }}#features">Fonctionnalités</a>
+            <a href="{{ '/' | relative_url }}#download">Télécharger</a>
+            <a href="{{ '/policy.html' | relative_url }}" target="_blank"
+              >Confidentialité</a
+            >
           </div>
 
           <div class="footer-section">
             <h3>Support</h3>
-            <a href="#">FAQ</a>
             <a href="#">Contact</a>
-            <a href="#">Documentation</a>
           </div>
 
           <div class="footer-section">
