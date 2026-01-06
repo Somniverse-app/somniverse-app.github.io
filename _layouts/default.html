@@ -12,7 +12,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="{{ '/assets/images/logo.png' | relative_url }}"
+      href="{{ '/assets/images/avatar.png' | relative_url }}"
     />
   </head>
   <body>
@@ -32,11 +32,6 @@
               <a href="{{ '/' | relative_url }}#features">Fonctionnalités</a>
             </li>
             <li><a href="{{ '/' | relative_url }}#download">Télécharger</a></li>
-            <li>
-              <a href="{{ '/policy.html' | relative_url }}" target="_blank"
-                >Confidentialité</a
-              >
-            </li>
           </ul>
         </nav>
       </div>
@@ -47,31 +42,19 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <div class="footer-section">
-            <h3>Liens rapides</h3>
-            <a href="{{ '/' | relative_url }}#features">Fonctionnalités</a>
-            <a href="{{ '/' | relative_url }}#download">Télécharger</a>
+          <div class="footer-links">
+            <a href="#">Contact</a>
             <a href="{{ '/policy.html' | relative_url }}" target="_blank"
               >Confidentialité</a
             >
+            <a href="#">App Store</a>
+            <a href="#">Google Play</a>
           </div>
-
-          <div class="footer-section">
-            <h3>Support</h3>
-            <a href="#">Contact</a>
+          <div class="footer-copyright">
+            <p>
+              &copy; {{ "now" | date: "%Y" }} Somniverse. Tous droits réservés.
+            </p>
           </div>
-
-          <div class="footer-section">
-            <h3>Télécharger</h3>
-            <a href="#">📱 App Store</a>
-            <a href="#">🤖 Google Play</a>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <p>
-            &copy; {{ "now" | date: "%Y" }} Somniverse. Tous droits réservés.
-          </p>
         </div>
       </div>
     </footer>
