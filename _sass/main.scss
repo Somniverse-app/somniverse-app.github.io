@@ -222,6 +222,20 @@ body::before {
   }
 }
 
+.section-badge {
+  display: inline-block;
+  padding: 12px 32px;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  backdrop-filter: none;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 // Section Features
 .features {
   padding: 80px 20px;
@@ -229,19 +243,6 @@ body::before {
   .section-header {
     text-align: center;
     margin-bottom: 60px;
-
-    .section-badge {
-      display: inline-block;
-      padding: 6px 16px;
-      background: $glass-bg;
-      border: 1px solid $glass-border;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-      backdrop-filter: blur(10px);
-    }
 
     h2 {
       font-size: clamp(2rem, 4vw, 3rem);
@@ -267,7 +268,7 @@ body::before {
 
   .feature-showcase-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 60px;
     align-items: center;
     position: relative;
@@ -305,6 +306,8 @@ body::before {
 
     // Design alterné pour les items pairs
     &.feature-reverse {
+      grid-template-columns: 1fr 2fr;
+
       .feature-content {
         order: 2;
       }
@@ -321,13 +324,11 @@ body::before {
     border-radius: 20px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-
-    // Contour blanc fin et élégant
-    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 20px 60px rgba(130, 86, 232, 0.7),
+      0 0 0 1px rgba(255, 255, 255, 0.9) inset;
 
     &:hover {
       transform: translateY(-10px) scale(1.02);
-      border: 3px solid rgba(255, 255, 255, 0.4);
     }
   }
 
@@ -348,19 +349,6 @@ body::before {
   .section-header {
     text-align: center;
     margin-bottom: 60px;
-
-    .section-badge {
-      display: inline-block;
-      padding: 6px 16px;
-      background: $glass-bg;
-      border: 1px solid $glass-border;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-      backdrop-filter: blur(10px);
-    }
 
     h2 {
       font-size: clamp(2rem, 4vw, 3rem);
@@ -618,6 +606,10 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
 
+    &.feature-reverse {
+      grid-template-columns: 1fr;
+    }
+
     .feature-content {
       order: 1 !important;
       padding: 20px;
@@ -646,8 +638,7 @@ footer {
     }
   }
 
-  .features-grid,
-  .stats-grid {
+  .features-grid {
     grid-template-columns: 1fr;
   }
 
@@ -662,6 +653,15 @@ footer {
       &::before {
         display: none;
       }
+    }
+
+    .qr-code-frame {
+      padding: 15px;
+    }
+
+    .qr-code {
+      width: 180px;
+      height: 180px;
     }
 
     .download-buttons {
