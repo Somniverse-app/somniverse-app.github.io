@@ -31,7 +31,7 @@ title: "Somniverse - Partage tes rêves"
       <!-- Feature 1 -->
       <div class="feature-showcase-item fade-in-up">
         <div class="feature-content">
-          <h3><span class="feature-number-inline">01</span> Crée ou rejoint des groupes</h3>
+          <h3><span class="feature-number-inline">01</span> Crée ou rejoins des groupes</h3>
           <p>Invite tes amis ou ta famille. Crée des espaces privés pour partager tes rêves en toute confiance.</p>
         </div>
         <img
@@ -45,7 +45,7 @@ title: "Somniverse - Partage tes rêves"
       <div class="feature-showcase-item feature-reverse fade-in-up">
         <div class="feature-content">
           <h3><span class="feature-number-inline">02</span> Publie ton rêve chaque jour</h3>
-          <p>Raconte ton rêves en quelques mots ou en détail. Catégorise le et partage-le avec tes groupes.</p>
+          <p>Raconte ton rêve en quelques mots ou en détail. Catégorise le et partage-le avec tes groupes.</p>
         </div>
         <img
           class="feature-img"

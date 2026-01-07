@@ -8,6 +8,17 @@
       content="Somniverse - Partage tes rêves avec tes amis"
     />
     <title>{{ page.title | default: "Somniverse - Partage tes rêves" }}</title>
+    <style>
+      /* Style critique pour éviter le flash blanc au chargement */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0f0c29;
+        background: linear-gradient(135deg, #0f0c29 0%, #1a1538 100%);
+        min-height: 100vh;
+      }
+    </style>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <link
       rel="icon"
