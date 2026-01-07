@@ -95,6 +95,7 @@ body::before {
     align-items: center;
 
     .logo {
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -677,6 +678,8 @@ footer {
 
   .policy-content {
     padding: 40px 20px;
+    border: none;
+    box-shadow: none;
   }
 }
 

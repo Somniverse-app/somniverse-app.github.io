@@ -30,14 +30,14 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <div class="logo">
+          <a class="logo" href="{{ '/' | relative_url }}">
             <img
               src="{{ '/assets/images/avatar.png' | relative_url }}"
               alt="Somniverse Logo"
               class="logo-image"
             />
             <span class="logo-text">Somniverse</span>
-          </div>
+          </a>
           <ul class="nav-links">
             <li>
               <a href="{{ '/' | relative_url }}#features">Fonctionnalités</a>
@@ -55,9 +55,7 @@
         <div class="footer-content">
           <div class="footer-links">
             <a href="#">Contact</a>
-            <a href="{{ '/policy.html' | relative_url }}" target="_blank"
-              >Confidentialité</a
-            >
+            <a href="{{ '/policy.html' | relative_url }}">Confidentialité</a>
             <a href="#">App Store</a>
             <a href="#">Google Play</a>
           </div>
