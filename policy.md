@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Somniverse - Partage tes rêves"
+title: "Somniverse - Confidentialité"
 ---
 
 <section id="privacy" class="policy-content">
