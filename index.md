@@ -14,10 +14,6 @@ title: "Somniverse - Partage tes rêves"
       Crée des groupes, invite tes amis, partage tes rêves, des plus drôles aux plus terrifiants
     </p>
 
-    <div class="hero-image fade-in-up">
-      <span>TODO</span>
-    </div>
-
   </div>
 </section>
 
