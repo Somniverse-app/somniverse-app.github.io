@@ -769,47 +769,6 @@ footer {
       font-size: 1rem;
     }
   }
-
-  .support-tips {
-    text-align: left;
-    background: $glass-bg-light;
-    backdrop-filter: blur(10px);
-    border: 1px solid $glass-border;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: $glass-shadow;
-
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-
-    .tips-list {
-      list-style: none;
-
-      li {
-        padding: 15px 0;
-        padding-left: 35px;
-        position: relative;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 1.1rem;
-
-        &::before {
-          content: '✓';
-          position: absolute;
-          left: 0;
-          color: #8256e8;
-          font-weight: bold;
-          font-size: 1.3rem;
-        }
-
-        @media (max-width: 768px) {
-          font-size: 1rem;
-        }
-      }
-    }
-  }
 }
 
 // Animations
