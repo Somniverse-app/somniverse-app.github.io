@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-// Variables de couleurs - Thème violet/rose
+// Color variables - Purple/pink theme
 $primary-gradient: linear-gradient(135deg, #8256e8 0%, #a20599 100%);
 $secondary-gradient: linear-gradient(135deg, #e80ddc 0%, #ff008a 100%);
 $accent-gradient: linear-gradient(135deg, #8256e8 0%, #e80ddc 100%);
@@ -13,7 +13,7 @@ $glass-bg-light: rgba(255, 255, 255, 0.12);
 $glass-border: rgba(255, 255, 255, 0.18);
 $glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
-// Reset et base
+// Reset and base
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@ body {
   min-height: 100vh;
 }
 
-// Animation de fond avec particules
+// Background animation with particles
 body::before {
   content: '';
   position: fixed;
@@ -78,7 +78,7 @@ body::before {
   }
 }
 
-// Container principal
+// Main container
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -139,7 +139,7 @@ body::before {
   }
 }
 
-// Section Hero
+// Hero Section
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -242,7 +242,7 @@ body::before {
   color: rgba(255, 255, 255, 0.9);
 }
 
-// Section Features
+// Features Section
 .features {
   padding: 80px 20px;
 
@@ -264,7 +264,7 @@ body::before {
     }
   }
 
-  // Nouveau design showcase en alternance
+  // New alternating showcase design
   .features-showcase {
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@ body::before {
       }
     }
 
-    // Design alterné pour les items pairs
+    // Alternating design for even items
     &.feature-reverse {
       grid-template-columns: 1fr 2fr;
 
@@ -349,7 +349,7 @@ body::before {
   }
 }
 
-// Section Download
+// Download Section
 .download {
   padding: 80px 20px;
 
@@ -603,7 +603,7 @@ footer {
     }
   }
 
-  // Responsive pour le nouveau design features showcase
+  // Responsive for the new features showcase design
   .features .feature-showcase-item {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -684,7 +684,7 @@ footer {
   }
 }
 
-// Page de support
+// Support page
 .support-section {
   padding: 50px 0;
   min-height: calc(100vh - 200px);
